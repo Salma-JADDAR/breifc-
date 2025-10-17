@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Space Odyssey</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+        /* Main container */
+        .site-header {
+            grid-area: top-section;
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 80px 80px;
+        }
+
+        /* Top section */
+        .top-bar {
+            background-color: #000;
+            background-image: url(images/stars.PNG);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+        }
+
+        .top-bar img {
+            height: 80px;
+            padding-left: 90px;
+        }
+
+        .search-field {
+            width: 300px;
+            height: 35px;
+            border-radius: 5px;
+            padding: 5px;
+            border: none;
+            margin-right: 25px;
+        }
+
+        .top-bar-right {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            padding-right: 100px;
+        }
+
+        .icon-group {
+            display: grid;
+            grid-template-columns: repeat(2 , 50px);
+            grid-template-rows: 40px;
+            align-items: center;
+        }
+
+        .icon-group img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .lang-select select {
+            width: 150px;
+            height: 35px;
+            background-color: rgba(240, 248, 255, 0);
+            color: #fff;
+            border: none;
+        }
+
+        .lang-select option {
+            color: #000;
+        }
+
+        /* Bottom section */
+        .bottom-bar {
+    background-color: #ffffff; /* fond blanc */
+    display: flex;
+    justify-content: center;  /* centrer horizontalement */
+    align-items: center;      /* centrer verticalement */
+    height: 80px;
+    box-shadow: 2px 2px 13px 5px rgba(54, 54, 54, 0.53);
+}
+
+.bottom-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* espace entre les liens */
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-bar ul li a {
+    text-decoration: none;
+    color: #0b0b0b;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+    border:4PX ;
+}
+
+.bottom-bar ul li a:hover,
+.bottom-bar ul li a.active {
+    color: #FFFFFF; /* couleur accent sur hover ou page active */
+    background-color: #000;
+}
+
+    </style>
+
+  </head>
+<body>
+
+
+         
+  <!-- 🌌 Navbar -->
+ <header class="site-header">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="top-bar-right">
+                <div>
+                    <input type="search" class="search-field" placeholder="Search space...">
+                </div>
+                <div class="lang-select">
+                    <select name="language">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="ar">العربية</option>
+                    </select>
+                </div>
+               
+            </div>
+        </div>
+        <div class="bottom-bar">
+           
+           <ul>
+          <li><a href="home.html">Accueil</a></li>
+          <li><a href="missions.html">Missions</a></li>
+          <li><a href="planet.html">Planets</a></li>
+          <li><a href="about.html" class="active">About us</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+        </ul>
+        </div>
+
+    </header>
+
+   
+        <body>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="Curiosity 1.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="images/Curiosity 1.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="images/1.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="images/2.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="images/3.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="images/4.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="images/5.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="images/6.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="images/7.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="images/4.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="mockup">
+    <aside class="card" aria-label="Curiosity card">
+      <div class="image-wrap">
+        <!-- replace path if needed -->
+        <img src="images/3.png" alt="Curiosity rover">
+      </div>
+
+      <div class="card-body">
+        <div class="card-title">Curiosity</div>
+        <div class="card-sub">Explore Mars' surface</div>
+
+        <div class="meta">
+          <div>Launch date: <strong class="meta-strong">November 26, 2011</strong></div>
+          <div class="dot">•</div>
+          <div>Agency: <a href="#" class="meta-link">NASA</a></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h1 class="title-big">Curiosity</h1>
+
+      <section class="desc-card">
+        <div class="desc-head">
+          <div class="desc-icon">i</div>
+          <div>
+            <p class="desc-paragraph">
+              Curiosity is a robotic rover sent by NASA to explore the surface of Mars. It was launched in 2011 and landed on Mars in August 2012 inside the Gale Crater. The rover carries scientific instruments to study the planet's climate and geology, and search for signs that the planet could have supported microbial life.
+            </p>
+
+            <div class="desc-list">
+              <div><span class="label">Description :</span>Short mission overview and role.</div>
+              <div><span class="label">Status :</span>Active (nuclear powered)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+<footer>
+      <div class="background-footer">
+        <div class="footer-top">
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column subscribe">
+            <h3>Subscribe</h3>
+            <input type="email" placeholder="Email address" />
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <a href="#"><img src="images/logo.png" alt="logo" /></a>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+          </div>
+
+       
+        </div>
+      </div>
+    </footer>
+
+
