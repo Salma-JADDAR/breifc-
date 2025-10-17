@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;600;700&display=swap" rel="stylesheet">
-
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 <style>
         /* Main container */
         .site-header {
@@ -138,15 +141,104 @@
         <div class="bottom-bar">
            
            <ul>
-          <li><a href="home.html">Accueil</a></li>
+          <li><a href="index.html">Accueil</a></li>
           <li><a href="missions.html">Missions</a></li>
-          <li><a href="planet.html">Planets</a></li>
-          <li><a href="about.html" class="active">About us</a></li>
+          <li><a href="planet.html"class="active">Planets</a></li>
+          <li><a href="about.html" >About us</a></li>
           <li><a href="contact_us.html">Contact</a></li>
         </ul>
         </div>
 
     </header>
+    <body>
+      <section class="hero-section" style="height:100vh; background-image:url('images/planet.PNG'); background-size:cover; background-position:center;">
+  <div class="hero-content">
+    <h1 class="hero-title" >Planets</h1>
+    <p class="animated-text">
+  Journey through space and learn about the amazing planets in our universe.
+</p>
+
+    <a href="https://science.nasa.gov/solar-system/planets/" class="btn-primary">Learn More</a>
+  </div>
+</section>
+
+<div class="containerr">
+
+    <!-- Soleil -->
+    <div class="card">
+      <img src="images/soleil.PNG" alt="Soleil">
+      <div class="content">
+        <h2>Soleil ☀️</h2>
+        <p>Le Soleil est l’étoile centrale de notre système solaire. Il fournit la lumière et la chaleur nécessaires à la vie sur Terre. Son diamètre est environ 109 fois celui de la Terre.</p>
+      </div>
+    </div>
+
+    <!-- Mercure -->
+    <div class="card">
+      <img src="images/m11.PNG" alt="Mercure">
+      <div class="content">
+        <h2>Mercure 🪐</h2>
+        <p>Mercure est la planète la plus proche du Soleil et la plus petite du système solaire. Elle connaît des variations de température extrêmes entre le jour et la nuit.</p>
+      </div>
+    </div>
+
+    <!-- Vénus -->
+    <div class="card">
+      <img src="images/v.PNG" alt="Vénus">
+      <div class="content">
+        <h2>Vénus 🌕</h2>
+        <p>Vénus est presque de la même taille que la Terre, mais son atmosphère épaisse rend sa surface brûlante. Elle est souvent appelée “l’étoile du berger”.</p>
+      </div>
+    </div>
+
+    <!-- Terre -->
+    <div class="card">
+      <img src="images/t.PNG" alt="Terre">
+      <div class="content">
+        <h2>Terre 🌍</h2>
+        <p>Notre planète bleue est la seule connue à abriter la vie. Sa surface est composée de 70 % d’eau et son atmosphère protège les êtres vivants des radiations solaires.</p>
+      </div>
+    </div>
+
+    <!-- Mars -->
+<div class="card"> <img src="images/mars.PNG" alt="Mars"> <div class="content"> <h2>Mars 🔴</h2> <p>Connue comme la “planète rouge”, Mars possède des montagnes géantes et des traces d’anciens lits de rivières. C’est une cible importante pour l’exploration spatiale.</p> </div> </div>
+    <!-- Jupiter -->
+    <div class="card">
+      <img src="images/j.PNG" alt="Jupiter">
+      <div class="content">
+        <h2>Jupiter ⚡</h2>
+        <p>La plus grande planète du système solaire, Jupiter est une géante gazeuse. Sa Grande Tache Rouge est une tempête gigantesque observée depuis plus de 300 ans.</p>
+      </div>
+    </div>
+    <!-- Saturne -->
+  <div class="card">
+    <img src="images/s.PNG" alt="Saturne">
+    <div class="content">
+      <h2>Saturne 💍</h2>
+      <p>Saturne est célèbre pour son impressionnant système d’anneaux composé de glace et de roches. C’est une géante gazeuse comme Jupiter.</p>
+    </div>
+  </div>
+
+  <!-- Uranus -->
+  <div class="card">
+    <img src="images/u.PNG" alt="Uranus">
+    <div class="content">
+      <h2>Uranus 🟦</h2>
+      <p>Uranus est une géante glacée qui tourne sur le côté, provoquant des saisons extrêmes. Son atmosphère contient de l’hydrogène, de l’hélium et du méthane.</p>
+    </div>
+  </div>
+
+  <!-- Neptune -->
+  <div class="card">
+    <img src="images/n.PNG" alt="Neptune">
+    <div class="content">
+      <h2>Neptune 🌊</h2>
+      <p>Neptune est la planète la plus éloignée du Soleil connue. Elle possède de forts vents et sa couleur bleue provient du méthane présent dans son atmosphère.</p>
+    </div>
+  </div>
+  </div>
+
+    </body>
     <footer>
       <div class="background-footer">
         <div class="footer-top">
@@ -171,9 +263,9 @@
           <div class="footer-column">
             <h3>Company</h3>
             <ul>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="missions.html">Careers</a></li>
+              <li><a href="contact_us.html">Contact us</a></li>
             </ul>
           </div>
 
@@ -196,15 +288,18 @@
             <a href="#">Cookies</a>
           </div>
 
-          <div class="social-icons">
-            <a href="#"
-              ><img src="images/about/Linkedin.png" alt="LinkedIn"
-            /></a>
-            <a href="#"><img src="images/about/fib.png" alt="Facebook" /></a>
-            <a href="#"
-              ><img src="images/about/twiiiter.png" alt="Twitter"
-            /></a>
-          </div>
-        </div>
+     
+              <div class="social-icons">
+  <a href="https://www.linkedin.com" target="_blank" class="social-link">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://www.facebook.com" target="_blank" class="social-link">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://twitter.com" target="_blank" class="social-link">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+</div>
       </div>
     </footer>

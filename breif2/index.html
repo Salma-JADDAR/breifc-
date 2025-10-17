@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Odyssey - Astronomy Website Mockup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<style>
+        /* Main container */
+        .site-header {
+            grid-area: top-section;
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 80px 80px;
+        }
+
+        /* Top section */
+        .top-bar {
+            background-color: #000;
+            background-image: url(images/stars.PNG);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+        }
+
+        .top-bar img {
+            height: 80px;
+            padding-left: 90px;
+        }
+
+        .search-field {
+            width: 300px;
+            height: 35px;
+            border-radius: 5px;
+            padding: 5px;
+            border: none;
+            margin-right: 25px;
+        }
+
+        .top-bar-right {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            padding-right: 100px;
+        }
+
+        .icon-group {
+            display: grid;
+            grid-template-columns: repeat(2 , 50px);
+            grid-template-rows: 40px;
+            align-items: center;
+        }
+
+        .icon-group img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .lang-select select {
+            width: 150px;
+            height: 35px;
+            background-color: rgba(240, 248, 255, 0);
+            color: #fff;
+            border: none;
+        }
+
+        .lang-select option {
+            color: #000;
+        }
+
+        /* Bottom section */
+        .bottom-bar {
+    background-color: #ffffff; /* fond blanc */
+    display: flex;
+    justify-content: center;  /* centrer horizontalement */
+    align-items: center;      /* centrer verticalement */
+    height: 80px;
+    box-shadow: 2px 2px 13px 5px rgba(54, 54, 54, 0.53);
+}
+
+.bottom-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* espace entre les liens */
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-bar ul li a {
+    text-decoration: none;
+    color: #0b0b0b;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+    border:4PX ;
+}
+
+.bottom-bar ul li a:hover,
+.bottom-bar ul li a.active {
+    color: #FFFFFF; /* couleur accent sur hover ou page active */
+    background-color: #000;
+}
+
+    </style>
+
+  </head>
+<body>
+
+
+         
+  <!-- 🌌 Navbar -->
+ <header class="site-header">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="top-bar-right">
+                <div>
+                    <input type="search" class="search-field" placeholder="Search space...">
+                </div>
+                <div class="lang-select">
+                    <select name="language">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="ar">العربية</option>
+                    </select>
+                </div>
+               
+            </div>
+        </div>
+        <div class="bottom-bar">
+           
+           <ul>
+          <li><a href="index.html"class="active">Accueil</a></li>
+          <li><a href="missions.html">Missions</a></li>
+          <li><a href="planet.html">Planets</a></li>
+          <li><a href="about.html" >About us</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+        </ul>
+        </div>
+
+ </header>
+
+    <section class="hero-section">
+  <div class="hero-content">
+    <h1>Space Odyssey</h1>
+    <p>Explore the wonders of the universe. <br> Discover stars, planets, and galaxies like never before.</p>
+    <a href="https://science.nasa.gov/resource/space-odyssey/" target="_blank" class="btn-primary">Explore Space</a>
+  </div>
+</section>
+
+
+    <main class="container">
+
+        
+<section class="feature-cards">
+    <div class="card dark-bg">
+        <h2>Discover the Universe</h2>
+        <p>Delve into the deepest corners of the cosmos with our curated content on everything in our universe right here.</p>
+        <a href="https://www.nasa.gov/topics/universe" target="_blank" class="btn-secondary">Learn More</a>
+    </div>
+    <div class="card dark-bg">
+        <h2>Updated on Space News</h2>
+        <p>Stay current with the fast-moving world of science and astronomy. From space missions to cosmological events...</p>
+        <a href="https://www.nasa.gov/news" target="_blank" class="btn-secondary">Learn More</a>
+    </div>
+    <div class="card dark-bg">
+        <h2>Learn from Experts</h2>
+        <p>Get insights from industry experts with exclusive articles, and educational materials. Sharpen your knowledge...</p>
+        <a href="https://www.nasa.gov/about" target="_blank" class="btn-secondary">Learn More</a>
+    </div>
+</section>
+
+
+        
+        <section class="timer-section">
+          <p class="intro-text">Dive into the fascinating world of astronomy with our curated content, expert insights, and the latest space news. Whether you're a curious learner or a seasoned enthusiast, explore resources that will deepen your understanding of the cosmos and stay connected with the ever-expanding universe.</p>
+             <div class="time-box">
+                <div class="time-label"><i class="fas fa-clock"></i> Total time in space</div>
+                <div class="time-display">
+                    <span>352 D</span>
+                    <span>5 H</span>
+                    <span>49 M</span>
+                    <span>20 S</span>
+                </div>
+            </div>
+        </section>
+
+    <section class="astronomy-section">
+    <div class="astronomy-image-card">
+        <div class="image-overlay">NS</div>
+        <img src="images/hom.png" alt="Asteroid" class="main-image">
+    </div>
+    <div class="astronomy-text-card dark-bg">
+      <div class="astronomy-text-card-container">
+        <h2>What Is Astronomy?</h2>
+        <p>
+          Astronomy is the scientific study of celestial objects like stars, planets, galaxies, and phenomena that occur outside of Earth's atmosphere. It uses physics, chemistry, and mathematics to investigate their origin, evolution, theoretical models, and advanced technologies to uncover the fundamental principles governing the cosmos.
+        </p>
+        <a href="https://www.nasa.gov/subject/6881/astronomy" target="_blank" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+</section>
+
+
+        
+    </main>
+    
+</body>
+<footer>
+      <div class="background-footer">
+        <div class="footer-top">
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="missions.html">Careers</a></li>
+              <li><a href="contact_us.html">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column subscribe">
+            <h3>Subscribe</h3>
+            <input type="email" placeholder="Email address" />
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <a href="#"><img src="images/logo.png" alt="logo" /></a>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+          </div>
+
+        
+              <div class="social-icons">
+  <a href="https://www.linkedin.com" target="_blank" class="social-link">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://www.facebook.com" target="_blank" class="social-link">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://twitter.com" target="_blank" class="social-link">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+</div>
+      </div>
+    </footer>
+</html>
